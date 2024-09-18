@@ -11,34 +11,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common PixelOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#Matrixx flags
-MATRIXX_MAINTAINER := JigenxOhtsusuki
-MATRIXX_CHIPSET := SM6125
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 720x1600
-
-#AUDIOFX
-TARGET_EXCLUDES_AUDIOFX := true
-
-#Build with Gapps:
-WITH_GMS := true
-
-#Device has UDFPS:
-TARGET_HAS_UDFPS := true
-
-#Blur effect
-TARGET_ENABLE_BLUR := true
-
-#Device has UDFPS:
-TARGET_HAS_UDFPS := true
-
-#Blur effect
-TARGET_ENABLE_BLUR := true
-
-#Exclude Packages
-TARGET_EXCLUDES_AUXIO := true
-TARGET_EXCLUDES_VIA := true
-
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
